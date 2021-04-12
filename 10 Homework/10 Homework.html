@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>10 Homework</title>
+</head>
+<body>
+<div class="container pt-2">
+  <div class="row border rounded-top" style="background-color: #f8f9fa">
+    <div class="col pt-3">
+      <p>Paspaudus mygtuką iškvieskite <code class="highlighter-rouge">.alert('Hello Wolrd!')</code></p>
+    </div>
+  </div>
+  <div class="row border border-top-0 rounded-bottom">
+    <div class="col m-4 text-center">
+      <button type="button" class="btn btn-primary" id="alert">Click on me</button>
+    </div>
+  </div>
+  <br>
+  <div class="row border rounded-top" style="background-color: #f8f9fa">
+    <div class="col pt-3">
+      <p>Įvestai reikšmei priklausomai nuo paspausto mygtuko keičiame registrą (Didelės/Mažos raidės)</p>
+    </div>
+  </div>
+  <div class="row border border-top-0 rounded-bottom">
+    <div class="col m-3">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Fill me in" id="Write">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" id="Upper">To Upper Case</button>
+          <button class="btn btn-outline-secondary" type="button" id="Lower">To Lower Case</button>
+          <button class="btn btn-outline-secondary" type="button" id="First_Upp">First Upper Case</button>
+          <button class="btn btn-outline-secondary" type="button" id="First_Low">Firs Lower Case</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row border rounded-top" style="background-color: #f8f9fa">
+    <div class="col pt-3">
+      <p>Paspaudus mygtuką patikrinkite įvestas reikšmes ir jeigu reikia parodykite klaidų pranešimus</p>
+      <ul>
+        <li> element show/hide</li>
+        <li> class add/remove</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row border border-top-0 rounded-bottom">
+    <div class="col">
+      <form>
+        <div class="form-group row pt-2">
+          <label for="example-email-input" class="col-2 col-form-label">Email</label>
+          <div class="col-10">
+            <input class="form-control" type="email" value="Enter email" id="example-email-input">
+            <small id="emailHelp" class="form-text text-muted"> Please check email</small>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+          <div class="col-10">
+            <input class="form-control" type="tel" value="Enter Phone Number" id="example-tel-input">
+            <small id="emailHelpp" class="form-text text-muted">Please check phone number</small>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-outline-dark offset-md-2">Save</button>
+      </form>
+    </div>
+  </div>
+  <br>
+  <div class="row border rounded-top" style="background-color: #f8f9fa">
+    <div class="col pt-3">
+      <p>Paspaudžius mygtuką užblouokite/atblokuokite <code class="highlighter-rouge">input</code></p>
+    </div>
+  </div>
+  <div class="row border border-top-0 rounded-bottom">
+    <div class="col m-3">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-danger" type="button" id="Block">Block</button>
+        </div>
+        <input type="text" class="form-control" placeholder="" id="Write1">
+        <button class="btn btn-outline-success" type="button" id="Unblock">Unblock</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row border rounded-top" style="background-color: #f8f9fa">
+    <div class="col pt-3">
+      <p>Užvedus ant paveiksliuko pakeisti jį</p>
+      <ul>
+        <li> <a href="#" class="stretched-link" id="picture1">https://i.imgur.com/PLDVxza.jpg</a></li>
+        <li> <a href="#" class="stretched-link" id="picture2">https://i.imgur.com/0DElr0H.jpg</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row border border-top-0 rounded-bottom">
+    <div class="col m-3 text-center">
+      <img src="https://i.imgur.com/0DElr0H.jpg" class="img-thumbnail" id="picture" alt="...">
+    </div>
+  </div>
+  <br>
+  <div class="row border rounded-top" style="background-color: #f8f9fa">
+    <div class="col pt-3">
+      <p>Paspaudžius ant mygtuko turi "iškristi" meniu su punktais. Paspaudžius punktą turi įvykti veiksmas</p>
+    </div>
+  </div>
+  <div class="row border border-top-0 rounded-bottom">
+    <div class="col m-3">
+      <h5 class="text-right" id="changes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer poseuere erat a ante.</h5>
+      <p class="text-right text-muted">- Someone famous in <em>Source Title</em></p>
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Cursors
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <a class="dropdown-item" id="Cursor1" href="#">Pointer</a>
+            <a class="dropdown-item" id="Cursor2" href="#">Help</a>
+            <a class="dropdown-item" id="Cursor3" href="#">Move</a>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop2" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Colors
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop2">
+            <a class="dropdown-item" id="Green" href="#">Green</a>
+            <a class="dropdown-item" id="Red" href="#">Red</a>
+            <a class="dropdown-item" id="Pink" href="#">Pink</a>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop3" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Borders
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+            <a class="dropdown-item" id="Black" href="#">Black</a>
+            <a class="dropdown-item" id="Blue" href="#">Blue</a>
+            <a class="dropdown-item" id="Light_blue" href="#">Light_blue</a>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-success" id="Reset_all">Reset All</button>
+    </div>
+  </div>
+  <br>
+  <div class="row border rounded-top" style="background-color: #f8f9fa">
+    <div class="col pt-3">
+      <p>Paspaudžius mygtuką parodykite informaciją apie save modaliniame lange</p>
+    </div>
+  </div>
+  <div class="row border border-top-0 rounded-bottom">
+    <div class="col m-3 text-center">
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch modal
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="Homework.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
